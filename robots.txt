@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://flownexus.in/sitemap.xml
