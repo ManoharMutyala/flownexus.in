@@ -1,36 +1,84 @@
-<!-- Contact form — replace old form with this -->
-<section class="contact-section">
-  <div class="container contact-container">
-    <h2>Get in touch</h2>
-    <p class="subtitle">Send us a quick message and we’ll get back to you.</p>
-
-    <form class="contact-form" action="https://formspree.io/f/xzznvqrv" method="POST" novalidate>
-      <!-- honeypot to stop bots -->
-      <input type="text" name="_honeypot" style="display:none">
-
-      <!-- redirect to a thank-you page after submit (create thank-you.html) -->
-      <input type="hidden" name="_next" value="https://flownexus.in/thank-you.html">
-
-      <div class="row">
-        <label class="field">
-          <span class="field-label">Your Name</span>
-          <input class="input" type="text" name="name" required>
-        </label>
-
-        <label class="field">
-          <span class="field-label">Your Email</span>
-          <input class="input" type="email" name="email" required>
-        </label>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact — FlowNexus Technologies</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/flownexus_style.css" />
+</head>
+<body>
+  <!-- Simple header (matches your site's nav) -->
+  <header class="site-header" role="banner" style="padding:18px 20px; border-bottom:1px solid #e6eef8;">
+    <div class="container" style="max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;">
+      <div class="brand">
+        <a href="/" style="text-decoration:none;color:#053763;font-weight:700;font-size:22px;">FlowNexus</a>
       </div>
+      <nav class="site-nav" style="font-size:15px;">
+        <a href="/" style="margin-right:18px;color:#23475f;text-decoration:none;">Home</a>
+        <a href="/services.html" style="margin-right:18px;color:#23475f;text-decoration:none;">Services</a>
+        <a href="/portfolio.html" style="margin-right:18px;color:#23475f;text-decoration:none;">Portfolio</a>
+        <a href="/about.html" style="margin-right:18px;color:#23475f;text-decoration:none;">About</a>
+        <a href="/contact.html" style="color:#0b4f86;font-weight:600;text-decoration:none;">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-      <label class="field">
-        <span class="field-label">Message</span>
-        <textarea class="textarea" name="message" rows="6" required></textarea>
-      </label>
+  <!-- Contact section -->
+  <main>
+    <section class="contact-section" style="padding:60px 16px;">
+      <div class="contact-container" style="max-width:980px;margin:0 auto;">
+        <h2>Get in touch</h2>
+        <p class="subtitle">Send us a quick message and we’ll get back to you.</p>
 
-      <div class="form-actions">
-        <button class="btn-primary" type="submit">Send Message</button>
+        <form class="contact-form" action="https://formspree.io/f/xzznvqrv" method="POST" novalidate>
+          <!-- Honeypot to stop bots -->
+          <input type="text" name="_honeypot" style="display:none" aria-hidden="true">
+
+          <!-- Redirect to this thank-you page after successful submit -->
+          <input type="hidden" name="_next" value="https://flownexus.in/thank-you.html">
+
+          <div class="row">
+            <label class="field">
+              <span class="field-label">Your Name</span>
+              <input class="input" type="text" name="name" required placeholder="e.g. Priya Sharma">
+            </label>
+
+            <label class="field">
+              <span class="field-label">Your Email</span>
+              <input class="input" type="email" name="email" required placeholder="you@company.com">
+            </label>
+          </div>
+
+          <label class="field">
+            <span class="field-label">Message</span>
+            <textarea class="textarea" name="message" rows="6" required placeholder="Tell us about your project or request"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn-primary" type="submit">Send Message</button>
+          </div>
+        </form>
+
+        <aside style="margin-top:28px;color:#304a66;">
+          <h4 style="margin-bottom:6px;color:#053763;">Other ways to reach us</h4>
+          <p style="margin:0;">Email: <a href="mailto:manohar.mutyala@flownexus.in">manohar.mutyala@flownexus.in</a></p>
+          <p style="margin:0;">Phone: <a href="tel:+919959158282">+91 9959158282</a></p>
+        </aside>
       </div>
-    </form>
-  </div>
-</section>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer style="background:#072a4b;color:#fff;padding:26px 12px;margin-top:40px;">
+    <div class="container" style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;">
+      <div>
+        <strong>FlowNexus Technologies</strong><br>
+        Integrate. Automate. Accelerate.
+      </div>
+      <div style="text-align:right;font-size:14px;">
+        © FlowNexus Technologies — All rights reserved
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
