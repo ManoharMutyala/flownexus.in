@@ -1,8 +1,10 @@
-/* Contact form styles — add at end of flownexus_style.css */
+/* =========== Contact page styles (FlowNexus) =========== */
 .contact-section { padding: 60px 20px; background: #fff; color:#0b2746; }
 .contact-container { max-width: 980px; margin: 0 auto; }
 .contact-container h2 { font-size: 32px; margin-bottom: 8px; color:#053763; }
 .contact-container .subtitle { margin-bottom: 24px; color:#34495e; }
+
+.contact-form { background:#f8fbff; padding:22px; border-radius:12px; box-shadow:0 6px 20px rgba(11,79,134,0.06); }
 
 .contact-form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
 @media (max-width:720px){ .contact-form .row { grid-template-columns: 1fr; } }
@@ -31,4 +33,4 @@
   font-weight:600;
   box-shadow: 0 6px 18px rgba(11,79,134,0.12);
 }
-.btn-primary:hover { transform: translateY(-1px); }
+.btn-primary:hover { transform: translateY(-1px); background:#0967b1; }
