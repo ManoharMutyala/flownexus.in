@@ -1,21 +1,36 @@
-<form action="https://formspree.io/f/xzznvqrv" method="POST">
-    
-    <input type="text" name="_honeypot" style="display:none">
+<!-- Contact form — replace old form with this -->
+<section class="contact-section">
+  <div class="container contact-container">
+    <h2>Get in touch</h2>
+    <p class="subtitle">Send us a quick message and we’ll get back to you.</p>
 
-    <label>
-        Your Name
-        <input type="text" name="name" required>
-    </label>
+    <form class="contact-form" action="https://formspree.io/f/xzznvqrv" method="POST" novalidate>
+      <!-- honeypot to stop bots -->
+      <input type="text" name="_honeypot" style="display:none">
 
-    <label>
-        Your Email
-        <input type="email" name="email" required>
-    </label>
+      <!-- redirect to a thank-you page after submit (create thank-you.html) -->
+      <input type="hidden" name="_next" value="https://flownexus.in/thank-you.html">
 
-    <label>
-        Message
-        <textarea name="message" rows="6" required></textarea>
-    </label>
+      <div class="row">
+        <label class="field">
+          <span class="field-label">Your Name</span>
+          <input class="input" type="text" name="name" required>
+        </label>
 
-    <button type="submit">Send Message</button>
-</form>
+        <label class="field">
+          <span class="field-label">Your Email</span>
+          <input class="input" type="email" name="email" required>
+        </label>
+      </div>
+
+      <label class="field">
+        <span class="field-label">Message</span>
+        <textarea class="textarea" name="message" rows="6" required></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button class="btn-primary" type="submit">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
